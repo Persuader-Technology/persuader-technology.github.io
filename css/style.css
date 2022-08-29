@@ -1,0 +1,30 @@
+body {
+    background-color: white;
+    height: 100%;
+    font: bold 14px monospace;
+}
+
+.center {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -100px;
+    transform: translate(-50%, -50%);
+    transition: 0.3s;
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+}
+
+.hide {
+    display: none;
+}
+
+.logo:hover + .hide {
+    display: block;
+    color: black;
+    text-align: center;
+}
